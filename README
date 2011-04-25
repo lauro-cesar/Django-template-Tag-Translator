@@ -1,0 +1,21 @@
+This is a template filter to translate strings from database.
+
+How to use:
+
+After installed, put in your template file:
+
+{% load translator %}
+
+to translate any string use:
+
+{{"Please, translate me from database..."|TranslateMe:"pt-br"}}
+
+if, string "Please, translate me from database..." already translated to pt-br,  template show it, otherwise, return original string, and save the original string into database to translate after...
+
+open MyStrings to add/edit strings...
+
+
+
+
+
+
