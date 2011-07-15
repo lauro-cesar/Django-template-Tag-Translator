@@ -15,11 +15,23 @@ if, string "Please, translate me from database..." already translated to pt-br, 
 
 of course, we can use it with any django variables:
 
+
+{% load i18n %}
+<html>
+
+<head><title>my theme</title>
+</head>
+<body>
 {%if article%}
 
-{{ article.title|TranslateMe:"pt-br"}}
+{{ article.title|TranslateMe:LANGUAGE_CODE}}
 
 {%endif%}
+</body>
+</html>
+
+
+
 
 open /admin/MyStrings to add/edit strings...
 
